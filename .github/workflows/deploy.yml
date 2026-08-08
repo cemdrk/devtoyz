@@ -32,7 +32,7 @@ jobs:
             echo "has_lock=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@v6
         with:
           node-version: 24
           # npm cache keys off the lock file — only enable it when one exists
@@ -67,4 +67,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v7
+        uses: actions/deploy-pages@v4
