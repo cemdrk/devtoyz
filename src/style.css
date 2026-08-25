@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('./fonts/inter-latin-variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/jetbrains-mono-latin-variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Palette — "workbench at night": deep slate base, warm amber tool-tag,
      cool cyan for interactive accents. Deliberately not cream+terracotta. */
