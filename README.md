@@ -55,3 +55,34 @@ file at that path. Hash mode avoids that with zero extra config.
 
 That single registry drives the home grid, the router, and the header nav —
 nothing else to wire up.
+
+
+### devbox
+```
+Info: Adding package "nodejs@24" to devbox.json
+Info: Installing the following packages to the nix store: nodejs@24
+
+nodejs NOTES:
+Devbox automatically configures Corepack for Nodejs when DEVBOX_COREPACK_ENABLED=1. You can install Yarn or Pnpm by adding them to your `package.json` file using `packageManager`
+Corepack binaries will be installed in your local `.devbox` directory
+
+When Corepack is enabled, Devbox also activates the package manager pinned in your `package.json` `packageManager` field automatically. Set DEVBOX_DISABLE_NODEJS_PACKAGE_MANAGER_AUTODETECT=1 to disable this behavior.
+
+Note: newer versions of Nodejs (25+) no longer bundle Corepack, so you must add the `corepack` package to your devbox.json separately for Corepack to be available.
+
+This plugin creates the following helper files:
+* /Users/cemdurak/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/bin/setup-corepack.mjs
+
+This plugin sets the following environment variables:
+* DEVBOX_COREPACK_BIN_DIR=/Users/cemdurak/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/corepack-bin
+* PATH=/Users/cemdurak/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/corepack-bin:$PATH
+
+To show this information, run `devbox info nodejs`
+```
+
+## llm plugins
+
+```
+/plugin marketplace add DietrichGebert/ponytail
+
+```
