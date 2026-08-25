@@ -57,6 +57,15 @@ custom properties for the palette/spacing (`--bg`, `--text`, `--amber`,
 scoped styles beyond what's already in the SFCs. Reuse the existing tokens
 rather than hardcoding new colors.
 
+## Commit style
+
+Use Conventional Commits for every commit message: `type: summary` (or
+`type(scope): summary`), e.g. `feat(httpclient): add HTTP client tool`,
+`fix: correct base64 padding`, `chore: bump vite`. Common types: `feat`,
+`fix`, `chore`, `docs`, `ci`, `refactor`. Keep the summary line short and
+in the imperative mood. This is already the convention in this repo's
+history (see `git log`) — keep following it.
+
 ## Deployment
 
 `.github/workflows/deploy.yml` triggers on every push to `main`: it
