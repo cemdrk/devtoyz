@@ -4,6 +4,7 @@ import Uuid from './views/Uuid.vue'
 import Hash from './views/Hash.vue'
 import UrlEncoder from './views/UrlEncoder.vue'
 import Timestamp from './views/Timestamp.vue'
+import HttpClient from './views/HttpClient.vue'
 
 // One list drives the home grid, the router, and the header nav.
 // To add a tool: build a view, import it, add an entry here.
@@ -49,5 +50,12 @@ export const tools = [
     tag: 'convert',
     blurb: 'Unix time to human-readable dates, both ways.',
     view: Timestamp,
+  },
+  {
+    slug: 'http',
+    name: 'HTTP Client',
+    tag: 'network',
+    blurb: 'Send a GET or POST request and inspect the response, right from your browser.',
+    view: HttpClient,
   },
 ]
