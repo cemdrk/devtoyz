@@ -71,11 +71,11 @@ When Corepack is enabled, Devbox also activates the package manager pinned in yo
 Note: newer versions of Nodejs (25+) no longer bundle Corepack, so you must add the `corepack` package to your devbox.json separately for Corepack to be available.
 
 This plugin creates the following helper files:
-* /Users/cemdurak/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/bin/setup-corepack.mjs
+* /Users/<user>/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/bin/setup-corepack.mjs
 
 This plugin sets the following environment variables:
-* DEVBOX_COREPACK_BIN_DIR=/Users/cemdurak/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/corepack-bin
-* PATH=/Users/cemdurak/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/corepack-bin:$PATH
+* DEVBOX_COREPACK_BIN_DIR=/Users/<user>/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/corepack-bin
+* PATH=/Users/<user>/dev/worktrees/devtoyz/httpclient/.devbox/virtenv/nodejs/corepack-bin:$PATH
 
 To show this information, run `devbox info nodejs`
 ```
